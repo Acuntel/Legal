@@ -56,17 +56,18 @@ export default function HomePage() {
         </p>
         <div className="flex items-center justify-center gap-4 mt-8">
           <Link
+            href="/demo"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
+          >
+            <MessageSquare className="w-4 h-4" />
+            Try Live Demo
+          </Link>
+          <Link
             href="/signup"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
           >
             Start Free Trial
             <ArrowRight className="w-4 h-4" />
-          </Link>
-          <Link
-            href="#features"
-            className="border border-gray-700 hover:border-gray-600 text-gray-300 px-6 py-3 rounded-lg font-medium transition-colors"
-          >
-            See How It Works
           </Link>
         </div>
         <div className="flex items-center justify-center gap-6 mt-8 text-sm text-gray-500">
@@ -190,6 +191,15 @@ export default function HomePage() {
                 <p className="text-gray-400 text-sm mt-2">{step.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              href="/demo"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            >
+              <MessageSquare className="w-4 h-4" />
+              See It In Action — Live Demo
+            </Link>
           </div>
         </div>
       </section>
